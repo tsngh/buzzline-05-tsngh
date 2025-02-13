@@ -1197,3 +1197,20 @@
 2025-02-05 09:45:25.277 | ERROR    | __main__:consume_messages_from_kafka:148 - ERROR: Could not consume messages from Kafka: Invalid file descriptor: -1
 2025-02-05 09:45:25.277 | ERROR    | __main__:main:203 - Unexpected error: Invalid file descriptor: -1
 2025-02-05 09:45:25.278 | INFO     | __main__:main:205 - Consumer shutting down.
+2025-02-13 10:25:42.088 | INFO     | utils.utils_logger:<module>:43 - Logging to file: logs\project_log.log
+2025-02-13 10:25:42.094 | INFO     | __main__:main:125 - Starting Producer to run continuously.
+2025-02-13 10:25:42.095 | INFO     | __main__:main:126 - Things can fail or get interrupted, so use a try block.
+2025-02-13 10:25:42.096 | INFO     | __main__:main:127 - Moved .env variables into a utils config module.
+2025-02-13 10:25:42.097 | INFO     | __main__:main:129 - STEP 1. Read required environment variables.
+2025-02-13 10:25:42.098 | INFO     | utils.utils_config:get_message_interval_seconds_as_int:65 - MESSAGE_INTERVAL_SECONDS: 5
+2025-02-13 10:25:42.099 | INFO     | utils.utils_config:get_kafka_topic:58 - BUZZ_TOPIC: buzzline
+2025-02-13 10:25:42.099 | INFO     | utils.utils_config:get_kafka_broker_address:51 - KAFKA_BROKER_ADDRESS: 127.0.0.1:9092
+2025-02-13 10:25:42.100 | INFO     | utils.utils_config:get_base_data_path:80 - BASE_DATA_DIR: C:\Users\Admin\OneDrive - nwmissouri.edu\46613\OneDrive - nwmissouri.edu\44671\buzzline-05-tsngh\buzzline-05-tsngh\data
+2025-02-13 10:25:42.101 | INFO     | utils.utils_config:get_live_data_path:89 - LIVE_DATA_PATH: C:\Users\Admin\OneDrive - nwmissouri.edu\46613\OneDrive - nwmissouri.edu\44671\buzzline-05-tsngh\buzzline-05-tsngh\data\project_live.json
+2025-02-13 10:25:42.102 | INFO     | __main__:main:140 - STEP 2. Delete the live data file if exists to start fresh.
+2025-02-13 10:25:42.103 | INFO     | __main__:main:145 - Deleted existing live data file.
+2025-02-13 10:25:42.104 | INFO     | __main__:main:147 - STEP 3. Build the path folders to the live data file if needed.
+2025-02-13 10:25:42.106 | INFO     | __main__:main:153 - STEP 4. Try to create a Kafka producer and topic.
+2025-02-13 10:25:42.107 | INFO     | utils.utils_config:get_zookeeper_address:44 - ZOOKEEPER_ADDRESS: 127.0.0.1:2181
+2025-02-13 10:25:44.161 | ERROR    | utils.utils_producer:check_zookeeper_service_is_ready:50 - Error checking Zookeeper readiness: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-02-13 10:25:44.162 | ERROR    | utils.utils_producer:verify_services:82 - Zookeeper is not ready. Please check your Zookeeper setup. Exiting...
