@@ -1,4 +1,4 @@
-# buzzline-05-case
+# buzzline-05-tsngh
 
 Nearly every streaming analytics system stores processed data somewhere for further analysis, historical reference, or integration with BI tools.
 
@@ -99,6 +99,8 @@ Windows:
 py -m consumers.kafka_consumer_case
 OR
 py -m consumers.file_consumer_case
+OR
+py -m consumers.consumer_tsngh
 ```
 
 Mac/Linux:
